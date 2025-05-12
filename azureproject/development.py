@@ -6,5 +6,4 @@ DATABASE_URI = 'postgresql+psycopg2://{dbuser}:{dbpass}@{dbhost}/{dbname}'.forma
     dbhost=os.environ['DBHOST'],
     dbname=os.environ['DBNAME']
 )
-
 #DATABASE_URI = os.getenv('DBConnectionString')
