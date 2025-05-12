@@ -1,9 +1,9 @@
 import os
 
 DATABASE_URI = 'postgresql+psycopg2://{dbuser}:{dbpass}@{dbhost}/{dbname}'.format(
-    dbuser=os.environ['DBUSER'],
-    dbpass=os.environ['DBPASS'],
-    dbhost=os.environ['DBHOST'],
-    dbname=os.environ['DBNAME']
+    dbuser=os.getenv('AZURE_POSTGRESQL_USER'),
+    dbpass=os.getenv('AZURE_POSTGRESQL_PASSWORD'),
+    dbhost=os.getenv('AZURE_POSTGRESQL_HOST'),
+    dbname=os.getenv('AZURE_POSTGRESQL_NAME')
 )
 #DATABASE_URI = os.getenv('DBConnectionString')
