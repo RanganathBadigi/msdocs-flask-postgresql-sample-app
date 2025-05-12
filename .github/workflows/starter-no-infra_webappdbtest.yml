@@ -5,9 +5,9 @@
 name: Build and deploy Python app to Azure Web App - webappdbtest
 
 on:
-  # push:
-  #   branches:
-  #     - starter-no-infra
+  push:
+    branches:
+      - starter-no-infra
   workflow_dispatch:
 
 jobs:
